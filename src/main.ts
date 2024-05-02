@@ -20,9 +20,9 @@ let green = 255;
 let blue = 255;
 let alpha = 1;
 
-let frequency = 7;
-let octaves = 8;
-let resolution = 256;
+let frequency = 1;
+let octaves = 1;
+let resolution = 200;
 
 // Input handling
 const redInput = document.querySelector<HTMLInputElement>("#red-input")!;
