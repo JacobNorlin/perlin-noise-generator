@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body>
+    <div id="app" style="display: flex; flex-direction: column; gap: 8px; height: 100%" ;>
+      <h1>Perlin noise generator</h1>
+      <h3>Generates perlin noise across all the red, green, blue, and alpha channel</h3>
+      <div>
+        <div>
+          <label>
+            Red
+            <input type="range" min="0" max="255" value="255" id="red-input" />
+          </label>
+          <label>
+            Green
+            <input type="range" min="0" max="255" value="255" id="green-input" />
+          </label>
+          <label>
+            Blue
+            <input type="range" min="0" max="255" value="255" id="blue-input" />
+          </label>
+          <label>
+            Alpha
+            <input type="range" min="0" max="1" value="255" id="alpha-input" step="0.05" />
+          </label>
+        </div>
+        <div>
+          <label>
+            Frequency
+            <input type="range" min="1" max="64" value="7" id="freq-input" />
+          </label>
+
+          <label>
+            Octaves
+            <input type="range" min="1" max="16" value="8" id="octave-input" />
+          </label>
+          <label>
+            Resolution
+            <input type="number" min="0" max="500" value="200" step="100" id="resolution-input" />
+          </label>
+        </div>
+      </div>
+
+      <div style="display: flex; flex: 1 0 0; padding: 2rem">
+        <canvas id="canvas" width="800" height="800" />
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
