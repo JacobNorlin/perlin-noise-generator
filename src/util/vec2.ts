@@ -39,7 +39,7 @@ export class Vec2 {
   }
 
   angle() {
-    return math.atan(this.y, this.x);
+    return Math.atan2(this.y, this.x);
   }
 
   multiply(num: number) {
