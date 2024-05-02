@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
       - name: Setup node
-        uses: peaceiris/setup-node@v4
+        uses: actions/setup-node@v4
         with:
           node-version: '20.12.2'
 
@@ -28,7 +28,7 @@ jobs:
         run: npm run build
 
       - name: Deploy
-        uses: actions/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
         # If you're changing the branch from main,
         # also change the `main` in `refs/heads/main`
         # below accordingly.
